@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* box-sizing;
+  border-box; */
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  background-color: #f5f0f0; 
+  overflow-x: hidden;
+  /* color: rgba(0,0,0,0.9); */
+}
+
+ ::-webkit-scrollbar{
+  width: 8px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb{
+  background: #000;
+}
+::-webkit-scrollbar-track{
+  background: #fff;
+}
+
+
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.link:hover {
+  color: #3366cc;
+}
+
+/* .MuiBadge-badge{background-color: #000022 !important;}  */
+/* .MuiTouchRipple-root {background-color: #686869 !important;} */
+/* Change ripple color (click effect) */
+.MuiTouchRipple-root span {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+nav ul Button{
+  text-transform: capitalize !important;
+}
+ 
+nav ul Button:hover {
+background: none  !important;
+}
+
+.sliderHome{
+  overflow: inherit !important;
+}
+
+.productSlider .swiper-wrapper{
+  padding:15px; margin-left: -15px; margin-right: -15px
+}
+
+ 
