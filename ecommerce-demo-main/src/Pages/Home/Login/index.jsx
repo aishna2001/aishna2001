@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const res = await fetch(
-        "http://localhost:5051/api/auth/login",
+        `${import.meta.env.VITE_API_URL}/api/auth/login`,
         {
           method: "POST",
           headers: {
@@ -57,7 +57,7 @@ const Login = () => {
   const testBackend = async () => {
     try {
       const res = await fetch(
-        "http://localhost:5051"
+        `${import.meta.env.VITE_API_URL}`
       );
       const data = await res.text();
       alert(data);

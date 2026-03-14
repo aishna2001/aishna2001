@@ -61,7 +61,7 @@ const Wishlist = () => {
   const fetchWishlist = async (token) => {
     try {
       const res = await axios.get(
-        "http://localhost:5051/api/users/wishlist",
+        `${import.meta.env.VITE_API_URL}/api/users/wishlist`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

@@ -19,7 +19,7 @@ const OwnerDashboard = () => {
         const userInfo = JSON.parse(localStorage.getItem("userInfo"));
 
         const response = await fetch(
-          "http://localhost:5051/api/products/my-products",
+          `${import.meta.env.VITE_API_URL}/api/products/my-products`,
           {
             headers: {
               Authorization: `Bearer ${userInfo.token}`,
